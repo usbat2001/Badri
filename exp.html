@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Expenses </title>
+    <link href="style_exp.css">
+    
+</head>
+<body>
+    <h1>Budget Expenses App</h1>
+    <form id="budget-form">
+        <label for="income">Monthly Income:</label>
+        <input type="number" id="income" name="income" step="0.01" required><br>
+
+        <h2>Expenses</h2>
+        <!-- Add input fields for different expense categories here -->
+        <label for="expense">Expense :</label>
+        <input type="number" id="expense" name="expense" step="0.01" required><br>
+
+        <button type="button" id="calculate-btn">Calculate Expenses</button>
+    </form>
+
+    <div id="results">
+        <p>Total Expenses: <span id="total-expenses">0.00</span></p>
+        <p>Balance: <span id="balance">0.00</span></p>
+    </div>
+
+    <script src="exp.js"></script>
+</body>
+</html>
